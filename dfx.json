@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "motoko_camp_backend": {
+      "main": "src/motoko_camp_backend/main.mo",
+      "type": "motoko"
+    },
+    "motoko_camp_frontend": {
+      "dependencies": [
+        "motoko_camp_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/motoko_camp_frontend/src/index.html"
+      },
+      "source": [
+        "src/motoko_camp_frontend/assets",
+        "dist/motoko_camp_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
